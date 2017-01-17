@@ -15,6 +15,7 @@
           url: '/loans',
           templateUrl: 'app/pages/loans/loans.html',
           title: 'Prestamos',
+          controller: 'LoansCtrl as vm',
           sidebarMeta: {
             icon: 'ion-cash',
             order: 0,

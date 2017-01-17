@@ -1,0 +1,61 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" ng-click="$dismiss()" aria-label="Close">
+      <em class="ion-ios-close-empty sn-link-close"></em>
+    </button>
+    <h4 class="modal-title" id="myModalLabel">Nuevo Prestamo</h4>
+  </div>
+  <div class="modal-body">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="input-investor" class="col-sm-2 control-label">Inversor</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="input-investor" placeholder="" ng-model="vm.formNewLoan.investor">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="input-date" class="col-sm-2 control-label">Fecha</label>
+        <div class="col-sm-4">
+          <input type="date" class="form-control" id="input-date" placeholder="" ng-model="vm.formNewLoan.date">
+        </div>
+        <label for="input-order" class="col-sm-2 control-label">N° Orden</label>
+        <div class="col-sm-4">
+          <input type="number" class="form-control" id="input-order" placeholder="" ng-model="vm.formNewLoan.order">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="input-first-name" class="col-sm-2 control-label">Nombre</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="input-first-name" placeholder="" ng-model="vm.formNewLoan.firstName">
+        </div>
+        <label for="input-last-name" class="col-sm-2 control-label">Apellido</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="input-last-name" placeholder="" ng-model="vm.formNewLoan.lastName">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="input-capital" class="col-sm-2 control-label">Capital</label>
+        <div class="col-sm-4">
+          <input type="number" class="form-control" id="input-capital" placeholder="" ng-model="vm.formNewLoan.capital">
+        </div>
+        <label for="input-interests" class="col-sm-2 control-label">Intereses</label>
+        <div class="col-sm-4">
+          <input type="number" class="form-control" id="input-interests" placeholder="" ng-model="vm.formNewLoan.interests">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="input-fee" class="col-sm-2 control-label">Cuotas</label>
+        <div class="col-sm-4">
+          <input type="number" class="form-control" id="input-fee" placeholder="" ng-model="vm.formNewLoan.fee">
+        </div>
+        <label for="input-fcapital" class="col-sm-2 control-label">F. Capital</label>
+        <div class="col-sm-4">
+          <input type="number" class="form-control" id="input-fcapital" placeholder="" ng-model="vm.formNewLoan.fCapital">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="$dismiss()">Save changes</button>
+  </div>
+</div>

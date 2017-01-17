@@ -1,69 +1,12 @@
-<div class="row">
-  <div class="col-md-12">
-    <div ba-panel ba-panel-class="xsmall-panel light-text">
-
-      <div class="horizontal-scroll">
-        <div class="form-group select-page-size-wrap ">
-          <label>Rows on page
-            <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
-                    ng-model="smartTablePageSize" ng-options="i for i in [5,10,15,20,25]">
-            </select>
-          </label>
+<div class="widgets">
+  <div class="row">
+    <div class="col-md-12">
+      <div ba-panel ba-panel-title="Editable Rows" ba-panel-class="with-scroll">
+        <div class="add-row-editable-table">
+          <button class="btn btn-primary" data-toggle="modal" ng-click="vm.openModal('app/pages/loans/widgets/modalAdd.html', 'md')">Add row</button>
         </div>
-        <table class="table" st-table="smartTableData">
-          <thead>
-          <tr class="sortable ">
-            <th class="table-id" st-sort="id" st-sort-default="true">#</th>
-            <th st-sort="date">Fecha</th>
-            <th st-sort="investor">Inversor</th>
-            <th st-sort="order">Orden N°</th>
-            <th st-sort="firstName">Nombre</th>
-            <th st-sort="lastName">Apellido</th>
-            <th st-sort="capital">Capital</th>
-            <th st-sort="interests">Intereses</th>
-            <th st-sort="fee">Cuotas</th>
-            <th st-sort="finalCapital">FCapital</th>
-          </tr>
-          <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><input st-search="firstName" placeholder="Search First Name" class="input-sm form-control search-input"
-                       type="search"/></th>
-            <th><input st-search="lastName" placeholder="Search Last Name" class="input-sm form-control search-input"
-                       type="search"/></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr ng-repeat="item in smartTableData">
-            <td class="table-id">{{item.id}}</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>{{item.firstName}}</td>
-            <td>{{item.lastName}}</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          </tbody>
-          <tfoot>
-          <tr>
-            <td colspan="11" class="text-center">
-              <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
-            </td>
-          </tr>
-          </tfoot>
-        </table>
+        <div include-with-scope="app/pages/loans/widgets/smartTable.html"></div>
       </div>
-
     </div>
   </div>
 </div>

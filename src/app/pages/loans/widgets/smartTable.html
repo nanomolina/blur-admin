@@ -1,0 +1,51 @@
+<div class="horizontal-scroll">
+  <table class="table" st-table="smartTableData">
+    <thead>
+    <tr class="sortable ">
+      <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+      <th st-sort="date">Fecha</th>
+      <th st-sort="investor">Inversor</th>
+      <th st-sort="order">Orden N°</th>
+      <th st-sort="firstName">Nombre</th>
+      <th st-sort="lastName">Apellido</th>
+      <th st-sort="capital">Capital</th>
+      <th st-sort="interests">Intereses</th>
+      <th st-sort="fee">Cuotas</th>
+      <th st-sort="finalCapital">FCapital</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th><input st-search="investor" placeholder="Buscar por inversor" class="input-sm form-control search-input" type="search"/></th>
+      <th><input st-search="order" placeholder="Buscar por orden" class="input-sm form-control search-input" type="search"/></th>
+      <th><input st-search="firstName" placeholder="Buscar por nombre" class="input-sm form-control search-input" type="search"/></th>
+      <th><input st-search="lastName" placeholder="Buscar por apellido" class="input-sm form-control search-input" type="search"/></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr >
+      <td class="table-id">1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="11" class="text-center">
+        <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>
