@@ -3,7 +3,9 @@
     <div class="col-md-12">
       <div ba-panel ba-panel-title="Editable Rows" ba-panel-class="with-scroll">
         <div class="add-row-editable-table">
-          <button class="btn btn-primary" data-toggle="modal" ng-click="vm.openModal('app/pages/loans/widgets/modalAdd.html', 'md')">Add row</button>
+          <button class="btn btn-primary" data-toggle="modal" ng-click="vm.openModal('app/pages/loans/widgets/modalAdd.html', 'md')">
+            <i class="fa fa-plus" aria-hidden="true"></i> Nuevo Prestamo
+          </button>
         </div>
         <div include-with-scope="app/pages/loans/widgets/smartTable.html"></div>
       </div>
